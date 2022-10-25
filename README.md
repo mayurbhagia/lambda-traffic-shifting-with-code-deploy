@@ -16,10 +16,10 @@ Step 2 - sam init -o ./newdevdaydemo -n new-helloworld-app --runtime python3.7
 Step 3 - Now update the template.yaml and folder of pre-traffic-hook and copy the files from this git to your local folder
 
 
-Step 3 - sam build --use-container
+Step 4 - sam build --use-container
 
 
-Step 4 - same deploy --guided
+Step 5 - same deploy --guided
 
 
-Step 5 - sam local invoke HelloWorldFunction --event events/event.json or sam local start-api --debug
+Step 6 - sam local invoke HelloWorldFunction --event events/event.json or sam local start-api --debug
