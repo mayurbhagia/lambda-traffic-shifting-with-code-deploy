@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "sarth-sam-app"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1ehjfj88nbylz"
+s3_prefix = "sarth-sam-app"
+region = "ap-south-1"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "Version=\"v1\""
+image_repositories = []
