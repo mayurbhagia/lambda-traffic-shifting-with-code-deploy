@@ -23,3 +23,11 @@ Step 5 - same deploy --guided
 
 
 Step 6 - sam local invoke HelloWorldFunction --event events/event.json or sam local start-api --debug
+
+Command to change CloudWatch Alarm from OK to Alarm state is as below:
+
+aws cloudwatch set-alarm-state \
+--alarm-name sarth-sam-app-LatestVersionErrorMetricGreaterThanZeroAlarm-GTN1FPIB3UNI \
+--state-value ALARM \
+--state-reason "testing the demo" \
+--region ap-south-1
